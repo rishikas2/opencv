@@ -11,7 +11,7 @@ def rescaleFrame(frame, scale= 0.75):
 
 # read video
 capture=cv.VideoCapture(0)
-#read frames from video stored in variable capture.
+#read frames from video stored in variable capture. works for videos, images, live videos
 while True:
     isTrue, frame = capture.read()
     frame_resized = rescaleFrame(frame)
